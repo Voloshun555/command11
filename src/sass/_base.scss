@@ -1,6 +1,9 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    cursor: url('../images/cursor.svg'), auto;
   }
   
   *,
