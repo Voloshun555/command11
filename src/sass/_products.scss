@@ -23,3 +23,26 @@
   text-align: center;
   margin: 0 auto;
 }
+
+.product-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+}
+
+.product-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-color-dark);
+}
+
+.forward-button {
+  fill: currentColor;
+}
