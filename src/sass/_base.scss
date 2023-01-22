@@ -13,6 +13,8 @@ html {
   }
   
   :root {
+    --cards-cream:#AEC6A5;
+    --cards-coffe:#EFD478;
     --text-color-data--Disabled: #ABABAB;
     --text-list-product: #D6936D;
     --text-color-btn: #000000;
@@ -26,13 +28,17 @@ html {
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
   
+
+
   body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #84A278;
+    background-color: #84A178;
 
   
   }
+  
+
   
   h1,
   h2,
