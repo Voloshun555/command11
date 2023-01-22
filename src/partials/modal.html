@@ -18,3 +18,81 @@
 
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
+
+
+
+
+
+<!-- ======================================== Product card - modal window ========================-->
+<div class="backdrop">
+   <div class="modal">
+       <button type="button" class="modal-close-btn">
+           <svg class="modal-close-btn-icon" width="20" height="20">
+               <use href="./images/sptite.svg#icon-close"></use>
+           </svg>
+       </button>
+       <h2 class="modal-header">Buy now</h2>
+       <ul class="modal-list">
+           <li class="modal-list-li">
+               <div class="modal-list-products-img">
+                       <img class="modal-list-img"
+                       srcset="./images/kelsey-curtis-ace-cream-disktop.jpg 1x,
+                       ./images/kelsey-curtis-ace-cream-disktop@2x.jpg 2x" 
+                       src="./images/kelsey-curtis-ace-cream-disktop.jpg" alt="ice cream picture" width="132" height="139">
+                   </div>
+                <h3 class="modal-list-products-container">ice cream</h3>
+           </li>
+           <li class="modal-list-li">
+               <div class="modal-list-products-img">
+                       <img class="modal-list-img"
+                       srcset="./images/ace-coffee-disktop.jpg 1x,
+                       ./images/ace-coffee-disktop@2x.jpg 2x" 
+                       src="./images/ace-coffee-disktop.jpg" alt="ice coffee picture" width="132" height="139">
+                   </div>
+                <h3 class="modal-list-products-container">ice coffee</h3>
+           </li>
+           <li class="modal-list-li">
+               <div class="modal-list-products-img">
+                       <img class="modal-list-img"
+                       srcset="./images/milkshakes-disktop.jpg 1x,
+                       ./images/milkshakes-disktop@2x.jpg 2x" 
+                       src="./images/milkshakes-disktop.jpg" alt="milkshake picture" width="132" height="139">
+                   </div>
+                <h3 class="modal-list-products-container">milkshake</h3>
+           </li>
+       </ul>
+       <form class="modal-form">
+           <label class="modal-form-field">
+               <span class="modal-form-input-wrapper">
+                   <input class="modal-form-input"
+                           type="text"
+                           name="user-name"
+                           required 
+                           pattern="[a-zA-Z]+" minlength="2"
+                           placeholder="Name">
+               </span>
+           </label>
+           <label class="modal-form-field">
+               <span class="modal-form-input-wrapper">
+                   <input class="modal-form-input"
+                           type="tel"
+                           name="user-phone"
+                           required 
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                           title="xxx-xxx-xx-xx"
+                           placeholder="Phone">
+               </span>
+           </label>
+           <label class="modal-form-field-comment">
+               <textarea name="user-comment"
+                         class="modal-form-comment" 
+                        placeholder="Comment"></textarea>
+           </label>
+           <button type="submit" class="modal-form-send">Submit</button>
+
+       </form>
+   </div>
+</div>
+
+<!--===================================================================================================================  -->
+
