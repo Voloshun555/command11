@@ -1,0 +1,135 @@
+.text-h {
+  display: block;
+  font-family: 'Seymour One';
+  width: 247px;
+  font-weight: 400;
+  font-size: 26px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-weight: 600;
+  font-size: 12px;
+  box-sizing: border-box;
+  min-width: 108px;
+  min-height: 38px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.hero-button:hover {
+  border: 2px solid #0a8817;
+  border-radius: 10px;
+}
+
+.hero-button:focus {
+  border: 2px solid #0a8817;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #f8d24e;
+  margin-left: 12px;
+}
+
+.hero-link:hover {
+  color: #0a8817;
+}
+
+.hero-link:focus {
+  color: #fcfcfc;
+}
+
+.hero-passion {
+  margin-top: 50px;
+}
+
+.passion-buttons {
+  margin-top: 32px;
+}
+
+.hero-image {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.hero-text {
+  display: flex;
+  margin-top: 42px;
+  align-items: center;
+}
+
+.plate {
+  border-radius: 100%;
+}
+
+.description-text {
+  width: 200px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.description-button {
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.description-svg {
+  width: 40px;
+  height: 16px;
+  fill: white;
+}
+
+.description {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    display: none;
+  }
+
+  .cafes-tracks {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-h {
+    width: 367px;
+    font-size: 38px;
+  }
+
+  .hero-button {
+    width: 134px;
+    height: 42px;
+  }
+
+  .hero-link {
+    font-size: 14px;
+  }
+
+  .hero-passion {
+    margin: unset;
+    margin-top: 45px;
+  }
+
+  .passion-buttons {
+    margin: unset;
+    margin-top: 24px;
+  }
+
+  .hero-link {
+    margin: unset;
+    margin-left: 34px;
+  }
+}

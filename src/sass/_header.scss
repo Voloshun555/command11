@@ -1,0 +1,162 @@
+.data-menu-open {
+  background-color: transparent;
+}
+
+.data-menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #84a278;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  z-index: 100;
+}
+
+.js-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-right: 20px;
+}
+
+.js-close-menu:hover {
+  background-color: var(--button-animation);
+  fill: #fff;
+}
+
+.js-close-menu:focus {
+  background-color: var(--button-animation);
+  fill: #fff;
+}
+
+.sidebar-buttons {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.menu-toggle {
+  margin-left: auto;
+  margin-top: 17px;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.menu-closed {
+  width: 34px;
+  height: 34px;
+}
+
+.is-open {
+  transform: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-header {
+  display: flex;
+}
+
+.logo-link {
+  width: 40px;
+  height: 37px;
+  padding-top: 12px;
+}
+
+.hero-menu {
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 308px;
+  padding-top: 40px;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.menu-item {
+  display: flex;
+  padding-right: 28px;
+}
+
+.menu-link {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-link:hover {
+  color: #f8d24e;
+}
+
+.menu-link:focus {
+  color: #f8d24e;
+}
+
+.hero-logo {
+  width: 40px;
+  height: 37px;
+  fill: #f8d24e;
+}
+
+.toggle-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.header-button {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: auto;
+  background-color: #f8d24e;
+  border-color: transparent;
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  margin-top: 28px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-logo {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav,
+  .hero-menu {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-logo {
+    width: 60px;
+    height: 65px;
+  }
+}
