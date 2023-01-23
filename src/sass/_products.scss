@@ -66,6 +66,25 @@
     z-index: 5;
   }
 
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
+  }
+
   .product-card.yellow::before {
     content: '';
     background-image: url(../images/ace-coffee-mobile.jpg);
@@ -78,6 +97,25 @@
     z-index: 5;
   }
 
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
+  }
+
   .product-card.pink::before {
     content: '';
     background-image: url(../images/milkshakes-mobile.jpg);
@@ -88,6 +126,25 @@
     top: -100px;
     left: 40px;
     z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
   }
 
   .green {
@@ -104,6 +161,7 @@
   }
 
   .product-name {
+    position: relative;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -140,15 +198,15 @@
   .products-background {
     background-image: url(../images/Backgroud_mobile@2x.jpg);
   }
-  // .product-card.green::before {
-  //   background-image: url(../images/kelsey-curtis-ace-cream-mobile@2x.jpg);
-  // }
-  // .product-card.yellow::before {
-  //   background-image: url(../images/ace-coffee-mobile@2x.jpg);
-  // }
-  // .product-card.pink::before {
-  //   background-image: url(../images/milkshakes-mobile@2x.jpg);
-  // }
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-mobile@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-mobile@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-mobile@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -180,7 +238,7 @@
     font-size: 30px;
     line-height: 1.26;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 145px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--text-color-dark);
@@ -197,7 +255,7 @@
     padding-right: 60px;
     padding-bottom: 16px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 168px;
     height: 428px;
     width: 320px;
   }
@@ -218,6 +276,25 @@
     z-index: 5;
   }
 
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
+  }
+
   .product-card.yellow::before {
     content: '';
     background-image: url(../images/ace-coffee-mobile.jpg);
@@ -230,6 +307,25 @@
     z-index: 5;
   }
 
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
+  }
+
   .product-card.pink::before {
     content: '';
     background-image: url(../images/milkshakes-mobile.jpg);
@@ -240,6 +336,25 @@
     top: -100px;
     left: 60px;
     z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
   }
 
   .green {
@@ -276,7 +391,8 @@
 
   .forward {
     margin-top: auto;
-    fill: var(--text-color-dark);
+    background-color: transparent;
+    border: transparent;
   }
 
   .forward-button {
@@ -290,15 +406,15 @@
   .products-background {
     background-image: url(../images/Background_tablet@2x.jpg);
   }
-  // .product-card.green::before {
-  //   background-image: url(../images/kelsey-curtis-ace-cream-tablet@2x.jpg);
-  // }
-  // .product-card.yellow::before {
-  //   background-image: url(../images/ace-coffee-tablet@2x.jpg);
-  // }
-  // .product-card.pink::before {
-  //   background-image: url(../images/milkshakes-tablet@2x.jpg);
-  // }
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-tablet@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-tablet@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-tablet@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -347,10 +463,9 @@
     border-radius: 24px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 60px;
-    padding-top: 165px;
-    padding-left: 62px;
-    padding-right: 62px;
+    padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
     padding-bottom: 12px;
     height: 428px;
     width: 224px;
@@ -373,6 +488,25 @@
     z-index: 5;
   }
 
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
+  }
+
   .product-card.yellow::before {
     content: '';
     background-image: url(../images/ace-coffee-tablet.jpg);
@@ -385,6 +519,25 @@
     z-index: 5;
   }
 
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
+  }
+
   .product-card.pink::before {
     content: '';
     background-image: url(../images/milkshakes-tablet.jpg);
@@ -395,6 +548,25 @@
     top: -111px;
     left: 12px;
     z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
   }
 
   .green {
@@ -429,6 +601,12 @@
     color: var(--text-color-dark);
   }
 
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
+  }
+
   .forward-button {
     fill: currentColor;
   }
@@ -440,15 +618,15 @@
   .products-background {
     background-image: url(../images/Backgroud_desktop@2x.jpg);
   }
-  // .product-card.green::before {
-  //   background-image: url(../images/kelsey-curtis-ace-cream-disktop@2x.jpg);
-  // }
-  // .product-card.yellow::before {
-  //   background-image: url(../images/ace-coffee-disktop@2x.jpg);
-  // }
-  // .product-card.pink::before {
-  //   background-image: url(../images/milkshakes-disktop@2x.jpg);
-  // }
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-disktop@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-disktop@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-disktop@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -519,6 +697,25 @@
     z-index: 5;
   }
 
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
+  }
+
   .product-card.yellow::before {
     content: '';
     background-image: url(../images/ace-coffee-disktop.jpg);
@@ -531,6 +728,25 @@
     z-index: 5;
   }
 
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
+  }
+
   .product-card.pink::before {
     content: '';
     background-image: url(../images/milkshakes-disktop.jpg);
@@ -541,6 +757,25 @@
     top: -167px;
     left: 34px;
     z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
   }
 
   .green {
@@ -576,6 +811,12 @@
     padding-left: 64px;
     letter-spacing: 0.04em;
     color: var(--text-color-dark);
+  }
+
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
   }
 
   .forward-button {
