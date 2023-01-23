@@ -33,11 +33,36 @@ html {
   body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #84A178;
+    background-image: url('../images/Backgroud_mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/Backgroud_mobile@2x.jpg');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/Background_tablet.jpg');
+    }
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+background-image: url('../images/Background_tablet@2x.jpg');
   }
-  
+
+  @media screen and (min-width: 1200px) {
+    .section-hero {
+      background-image: url("../images/Backgroud_desktop.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2), screen and (min-width: 1158px) and (min-resolution: 192dpi), screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+   
+      background-image: url("../images/Backgroud_desktop@2x.jpg");
+    }
+
+}
 
   
   h1,
