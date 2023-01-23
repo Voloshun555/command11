@@ -17,54 +17,30 @@
   <div class="sidebar-wrapper"></div>
 </div> -->
 <div class="js-menu-container">
+  <a class="logo-link" href=""
+    ><svg class="hero-logo">
+      <use href="./images/sptite.svg#icon-logo"></use></svg
+  ></a>
   <span class="js-close-menu"
-    ><svg class="">
-      <use href="./images/icons.svg#icon-close"></use></svg
+    ><svg class="close-mobile-menu">
+      <use href="./images/icons.svg#icon-close-mobile-menu"></use></svg
   ></span>
   <ul class="sidebar-list">
     <li>
-      <a class="sidebar-list-a current" href="./index.html">Studio</a>
+      <a class="sidebar-list-a current" href="./index.html">Home</a>
     </li>
-    <li><a class="sidebar-list-a" href="#">Portfolio</a></li>
-    <li><a class="sidebar-list-a" href="#">Contacts</a></li>
+    <li>
+      <a class="sidebar-list-a" href="./index.html">How it's made?</a>
+    </li>
+    <li><a class="sidebar-list-a" href="./index.html">Our products</a></li>
+    <li><a class="sidebar-list-a" href="./index.html">Contacts</a></li>
   </ul>
-
-  <div class="sidebar-wrapper">
-    <div class="sidebar-contacts">
-      <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-    </div>
-    <ul class="sidebar-buttons">
-      <li>
-        <a class="teams-btn" href="#">
-          <svg class="icon-teams">
-            <use href="./images/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="teams-btn" href="#">
-          <svg class="icon-teams">
-            <use href="./images/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="teams-btn" href="#">
-          <svg class="icon-teams">
-            <use href="./images/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="teams-btn" href="#">
-          <svg class="icon-teams">
-            <use href="./images/icons.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <button class="menu-button" type="button">
+    Buy now
+    <!-- <svg class="header-svg">
+      <use href="./images/icons.svg#icon-arrow-def"></use>
+    </svg> -->
+  </button>
 </div>
 <header class="header">
   <div class="hero-header container">
@@ -85,8 +61,7 @@
       </ul>
     </nav>
     <button
-      class="menu-toggle"
-      data-menu-open
+      class="menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >

@@ -17,6 +17,8 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -36,6 +38,7 @@
   text-decoration-line: underline;
   color: #f8d24e;
   margin-left: 12px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link:hover {
@@ -52,11 +55,6 @@
 
 .passion-buttons {
   margin-top: 32px;
-}
-
-.hero-image {
-  margin-top: 20px;
-  margin-left: auto;
 }
 
 .hero-text {
@@ -81,6 +79,7 @@
   border-color: transparent;
   border: none;
   padding: 0;
+  margin-top: 24px;
 }
 
 .description-svg {
@@ -93,6 +92,45 @@
   margin-left: 16px;
 }
 
+.ice-cream {
+  margin-top: 20px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-image {
+  position: absolute;
+  margin-left: 82px;
+  margin-right: 60px;
+  bottom: 0;
+  right: 0;
+}
+
+.cafes-tracks {
+  text-align: right;
+  list-style: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 32px;
+  margin-top: 94px;
+}
+
+.amount {
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.institution-type {
+  color: #fff;
+  font-weight: 400;
+  font-size: 8px;
+}
 @media screen and (max-width: 768px) {
   .hero-text {
     display: none;
@@ -103,7 +141,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1157px) {
   .text-h {
     width: 367px;
     font-size: 38px;
@@ -131,5 +169,15 @@
   .hero-link {
     margin: unset;
     margin-left: 34px;
+  }
+
+  .amount {
+    font-weight: 900;
+    font-size: 46px;
+  }
+
+  .institution-type {
+    font-weight: 400;
+    font-size: 14px;
   }
 }
