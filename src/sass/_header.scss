@@ -147,6 +147,12 @@
   transform: none;
 }
 
+.container-header {
+  background-color: #84a278;
+  width: 100%;
+  padding: 20px;
+}
+
 .menu-toggle {
   background-color: transparent;
   margin-left: auto;
@@ -167,12 +173,6 @@
   height: 42px;
   border-radius: 10px;
   margin-top: 110px;
-}
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .hero-header {

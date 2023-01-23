@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cream</title>
-    <link rel="shortcut icon" type="image/jpg" href="./images/ace-cream-mobile.png"/>
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./images/ace-cream-mobile.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap" rel="stylesheet">
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -22,45 +29,42 @@
     <!-- <include src="./partials/example.html"></include> -->
     <!--============= Header ===============-->
     <include src="./partials/header.html"></include>
-<main>
- 
-   <!--================= hero ==============-->
-   <include src="./partials/hero.html"></include>
+    <main>
+      <!--================= hero ==============-->
+      <include src="./partials/hero.html"></include>
 
-   <!--================== Products ==========-->
-   <include src="./partials/products.html"></include>
+      <!--================== Products ==========-->
+      <!-- <include src="./partials/products.html"></include> -->
 
-   <!--==================== About ====================-->
-   <include src="./partials/About.html"></include>
+      <!--==================== About ====================-->
+      <!-- <include src="./partials/About.html"></include> -->
 
-   <!--================ Advantages ============-->
-   <include src="./partials/Advantages.html"></include>
+      <!--================ Advantages ============-->
+      <!-- <include src="./partials/Advantages.html"></include> -->
 
-   <!--===================== Gallery =============-->
-   <include src="./partials/Gallery.html"></include>
+      <!--===================== Gallery =============-->
+      <!-- <include src="./partials/Gallery.html"></include> -->
 
-   <!--=============== Customer Reviews ===============-->
-   <include src="./partials/Customer Reviews.html"></include>
+      <!--=============== Customer Reviews ===============-->
+      <!-- <include src="./partials/Customer Reviews.html"></include> -->
 
+      <!--===================== Contacts ===================-->
+      <!-- <include src="./partials/Contacts.html"></include> -->
+    </main>
+    <!--===================== footer  =====================-->
+    <!-- <include src="./partials/footer.html"></include> -->
 
-   <!--===================== Contacts ===================-->
-   <include src="./partials/Contacts.html"></include>
+    <include src="./partials/modal.html"></include>
 
-</main>
-<!--===================== footer  =====================-->
-<include src="./partials/footer.html"></include>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/menu.js"></script>
 
-<include src="./partials/modal.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<script src="./js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
-<script src="./js/menu.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
@@ -69,16 +73,15 @@ new WOW().init();
     <script defer src="js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         spaceBetween: 30,
-        effect: "fade",
+        effect: 'fade',
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
 
@@ -95,20 +98,18 @@ new WOW().init();
         fadeEffect: {
           crossFade: true,
         },
-
       });
     </script>
 
-                  <!-- SCRIPT-2 -->
+    <!-- SCRIPT-2 -->
 
     <script>
-      new Swiper(".image-slider", {
+      new Swiper('.image-slider', {
         spaceBetween: 30,
-        effect: "fade",
+        effect: 'fade',
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
 
         mousewheel: {
@@ -134,7 +135,6 @@ new WOW().init();
         flipEffect: {
           slideShadows: true,
           limitRotation: true,
-
         },
       });
     </script>
