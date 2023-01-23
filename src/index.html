@@ -67,5 +67,76 @@ new WOW().init();
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+          pageUpDown: true,
+        },
+
+        speed: 500,
+
+        effect: 'fade',
+
+        fadeEffect: {
+          crossFade: true,
+        },
+
+      });
+    </script>
+
+                  <!-- SCRIPT-2 -->
+
+    <script>
+      new Swiper(".image-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          
+        },
+
+        mousewheel: {
+          sensitivity: 1,
+          loop: false,
+          loopedSlides: 0,
+          freeMode: true,
+          speed: 800,
+        },
+
+        speed: 1000,
+
+        loop: true,
+
+        autoplay: {
+          delay: 1000,
+          stopOnLastSlide: true,
+          disableOninteraction: false,
+        },
+
+        effect: 'flip',
+
+        flipEffect: {
+          slideShadows: true,
+          limitRotation: true,
+
+        },
+      });
+    </script>
   </body>
 </html>
