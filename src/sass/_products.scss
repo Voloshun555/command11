@@ -44,6 +44,7 @@
     padding-top: 123px;
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 280px;
     height: 420px;
   }
 
@@ -54,6 +55,7 @@
   .product-card.green::before {
     content: '';
     background-image: url(../images/kelsey-curtis-ace-cream-mobile.jpg);
+    background-position: 0px 0px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -131,6 +133,15 @@
   .products-background {
     background-image: url(../images/Backgroud_mobile@2x.jpg);
   }
+  // .product-card.green::before {
+  //   background-image: url(../images/kelsey-curtis-ace-cream-mobile@2x.jpg);
+  // }
+  // .product-card.yellow::before {
+  //   background-image: url(../images/ace-coffee-mobile@2x.jpg);
+  // }
+  // .product-card.pink::before {
+  //   background-image: url(../images/milkshakes-mobile@2x.jpg);
+  // }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -180,10 +191,41 @@
     margin: 0 auto;
     margin-bottom: 60px;
     height: 428px;
+    width: 320px;
   }
 
   .product-card:last-child {
     margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
   }
 
   .green {
@@ -232,6 +274,15 @@
   .products-background {
     background-image: url(../images/Background_tablet@2x.jpg);
   }
+  // .product-card.green::before {
+  //   background-image: url(../images/kelsey-curtis-ace-cream-tablet@2x.jpg);
+  // }
+  // .product-card.yellow::before {
+  //   background-image: url(../images/ace-coffee-tablet@2x.jpg);
+  // }
+  // .product-card.pink::before {
+  //   background-image: url(../images/milkshakes-tablet@2x.jpg);
+  // }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -276,6 +327,7 @@
   }
 
   .product-card {
+    position: relative;
     border-radius: 24px;
     text-align: center;
     margin: 0 auto;
@@ -285,10 +337,42 @@
     padding-right: 62px;
     padding-bottom: 12px;
     height: 428px;
+    width: 224px;
   }
 
   .product-card:last-child {
     margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-tablet.jpg);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-tablet.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-tablet.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
   }
 
   .green {
@@ -334,6 +418,15 @@
   .products-background {
     background-image: url(../images/Backgroud_desktop@2x.jpg);
   }
+  // .product-card.green::before {
+  //   background-image: url(../images/kelsey-curtis-ace-cream-disktop@2x.jpg);
+  // }
+  // .product-card.yellow::before {
+  //   background-image: url(../images/ace-coffee-disktop@2x.jpg);
+  // }
+  // .product-card.pink::before {
+  //   background-image: url(../images/milkshakes-disktop@2x.jpg);
+  // }
 }
 
 @media screen and (min-width: 1200px) {
@@ -383,10 +476,42 @@
     margin: 0 auto;
     padding-bottom: 60px;
     height: 536px;
+    width: 370px;
   }
 
   .product-card:last-child {
     margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-disktop.jpg);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-disktop.jpg);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-disktop.jpg);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
   }
 
   .green {
