@@ -51,9 +51,32 @@
     margin-bottom: 0;
   }
 
-  .green::before {
+  .product-card.green::before {
     content: '';
     background-image: url(../images/kelsey-curtis-ace-cream-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     position: absolute;
     z-index: 5;
   }
