@@ -336,8 +336,8 @@ display: block;
 /* =================================== Modal with info about product ============================ */
 
 .modal-about {
-   position: absolute;
-   top: 60%;
+   position: fixed;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;
@@ -657,7 +657,7 @@ display: block;
 /* ================================================== Product card - modal window =================================  */
 
 .modal-franchise {
-   position: absolute;
+   position: fixed;
    top: 60%;
    left: 50%;
    transform: translate(-50%, -50%);
