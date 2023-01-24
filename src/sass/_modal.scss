@@ -341,7 +341,7 @@ display: block;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;
-   
+   height: 90vh;
    background: var(--text-color);
    border: 2px solid var(--Default-color);
    border-radius: 10px;
@@ -350,6 +350,11 @@ display: block;
    opacity: 0;
    visibility: hidden;
    z-index: 30;
+
+
+   @media screen  and (max-width:1199px) {
+      overflow: scroll;
+   }
 }
 
 .modal-about-header {
@@ -974,10 +979,15 @@ display: block;
  
  .modal-video-box {
    width: 100%;
+   
    border-radius: 10px;
    padding-bottom: 20px;
    position: relative;
    overflow: hidden;
+
+   @media screen and (min-width:768px) {
+      height: 205px;
+   }
  }
  
  .video-modal-text{
