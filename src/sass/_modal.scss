@@ -1,82 +1,988 @@
-/* Стили для подложки */
-
 .overlay {
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
    
-    /* Скрываем подложку  */
-    opacity: 0;
-    visibility: hidden;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 20;
-    transition: .3s all;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+ }
+
+.modal.active,
+.overlay.active{
+ opacity: 1;
+ visibility: visible;
+}
+
+/* ================================================================================================================ */
+
+/* ================================================== MODAL WINDOW UNIVERSAL=================================  */
+
+
+.modal-close-btn {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   fill: var(--text-color-dark);
+   border: 0;
+   padding: 0;
+   cursor: pointer;
+   background-color: transparent;
+
+}
+
+
+
+/* ================================================================================================================  */
+
+
+/* ================================================== Product card - modal window =================================  */
+
+.modal-products {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 280px;
+   background: var(--text-color);
+   border: 2px solid var(--Default-color);
+   border-radius: 10px;
+   padding: 28px;
+   opacity: 0;
+ visibility: hidden;
+ z-index: 30;
+
+}
+
+
+.modal-header {
+   margin-bottom: 20px;
+   font-family: 'Seymour One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   color: var(--text-color-dark);
+
+}
+
+.modal-list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   padding-top: 66px;
+}
+
+.modal-list-li {
+   position: relative;
+   border-radius: 15px;
+   text-align: center;
+   border-right-width: 2px;
+   border-bottom-width: 2px;
+   border-left-width: 2px;
+   border-right-style: solid;
+   border-left-style: solid;
+   border-bottom-style: solid;
+   width: 132px;
+   padding-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+
+
+}
+
+.modal-list-li:first-child {
+   border-color: #96AF8C;
+}
+
+.modal-list-li:first-child::before {
+   content: '';
+   display: inline-block;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+   position: absolute;
+   top: -50px;
+   left: -2px;
+}
+
+
+.modal-list-li:nth-child(2) {
+   background-color: var(--cards-coffe);
+   border-color: transparent;
+
+}
+
+.modal-list-li:nth-child(2)::before {
+   content: '';
+   display: inline-block;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+   position: absolute;
+   top: -50px;
+   left: -2px;
+}
+
+
+.modal-list-li:last-child {
+   border-color: var(--text-list-product);
+}
+
+.modal-list-li:last-child::before {
+   content: '';
+   display: inline-block;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+   position: absolute;
+   top: -50px;
+   left: -2px;
+}
+
+.modal-list-li:not(:last-child) {
+   margin-bottom: 86px;
+}
+
+
+.modal-list-products {
+text-decoration: none;
+display: block;
+}
+
+.modal-list-products-img{
+   position: absolute;
+   top: -57px;
+   left: 0;
+   
+}
+
+.modal-list-img {
+  border-radius: 50%;
+
+}
+
+.modal-list-products-container {
+   padding: 93px 10px 20px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: var(--text-color-dark);
+   white-space: nowrap;
+   margin: 0;
+}
+
+.modal-form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 31px;
+  
+}
+
+.modal-form-field {
+   margin-bottom: 12px;
+}
+
+.modal-form-input-wrapper {
+   display: block;
+   position: relative;
+
+}
+
+.modal-form-input {
+   width: 100%;
+   height: 32px;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+   padding-left: 12px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 140%;
+   color: #131313; 
+
+}
+
+
+
+.modal-form-field-comment {
+   margin-bottom: 26px;
+}
+
+.modal-form-comment {
+   display: block;
+   width: 100%;
+   height: 65px;
+   resize: none;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+
+   padding-left: 12px;
+   padding-top: 8px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 140%;
+   color: var(--text-color-dark);
+   
+}
+
+.modal-form-send {
+   align-self: center;
+   width: 114px;
+   
+   padding: 16px 32px;
+   background: var(--Default-color);
+   border-radius: 10px;
+   border-color: transparent;
+
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0.04em;
+   color: var(--text-color-dark);
+   cursor: pointer;
+
+   transition: background-color var(--cubic-brauser),
+               color var(--cubic-brauser)
+}
+
+.modal-form-send:hover {
+   background-color: var(--hover-color);
+   color: var(--text-color-btn);
+}
+
+.modal-form-send:focus {
+   background-color: var(--hover-color);
+   color: #ffffff;
+}
+
+
+
+/* =================================== TABLET AND DESKTOP ================================ */
+
+@media screen and (min-width:768px) {
+   .modal-products {
+       width: 568px;
+       padding: 32px 54px;
+   }
+   .modal-header {
+       font-size: 20px;
+       line-height: 28px;
+       margin-bottom: 40px;
+   }
+
+   .modal-list {
+       display: flex;
+       justify-content: space-between;
+       column-gap: 32px;
+       row-gap: 40px;
+   }
+
+   .modal-list-li:not(:last-child) {
+       margin-bottom: 0;
+   }
+
+   .modal-form {
+       width: 368px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .modal-form-input {
+       height: 42px;
+   }
+
+   .modal-form-comment {
+       height: 84px;
+   }
+
+   .modal-form-send {
+       width: 121px;
+   }
+
+   .modal-form-field-comment {
+       margin-bottom: 32px;
+   }
+
+   .modal-form-field {
+       margin-bottom: 16px;
+   }
+}
+/* ============================================================================================== */
+
+/* =================================== Modal with info about product ============================ */
+
+.modal-about {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 280px;
+   
+   background: var(--text-color);
+   border: 2px solid var(--Default-color);
+   border-radius: 10px;
+   padding: 28px 20px;
+
+   opacity: 0;
+   visibility: hidden;
+   z-index: 30;
+}
+
+.modal-about-header {
+   margin-bottom: 20px;
+   font-family: 'Seymour One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   align-items: center;
+   text-align: center;
+   color: var(--text-color-dark);  
+}
+
+.modal-about-list-products-img{
+   position: absolute;
+   top: 105px;
+   left: 26%;
+   
+}
+
+.modal-about-list-img {
+  border-radius: 50%;
+
+}
+
+.modal-about-list {
+   padding-top: 182px;
+   padding-bottom: 40px;
+   list-style-type: none;
+   display: flex;
+   column-gap: 9px;
+   justify-content: center;
+   
+   
+}
+
+.modal-about-list::before {
+   content: '';
+   display: inline-block;
+   width: 132px;
+   height: 132px;
+   border-radius: 50%;
+   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+   position: absolute;
+   top: 115px;
+   left: 26%;
+   z-index: -1;
+}
+
+.modal-about-list-li {
+  
+   text-align:center;
+   position: relative;
+}
+
+.modal-about-list-li-value {
+   width: 43px;
+   height: 43px;
+   background: #9CBE8F;
+   border: 2px solid #9CBE8F;
+   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+   border-radius: 50%;
+   padding-top: 8px;
+   padding-bottom: 8px;
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 10px;
+   line-height: 28px;
+   align-items: center;
+   text-align: center;
+   color: var(--text-color-dark);
+
+   position: absolute;
+   left: 5px;
+   top: 0;
+
+   
+}
+
+.modal-about-list-li-measure {
+   width: 53px;
+   border: 2px solid #9CBE8F;
+   border-radius: 40px;
+   padding-top: 43px;
+   padding-bottom: 8px;
+
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 12px;
+   align-items: center;
+   text-align: center;
+   color: var(--text-color-dark);
+}
+
+.modal-about-ingredients {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: center;
+   color: var(--text-color-dark);
+   margin-bottom: 24px;
+}
+
+.modal-about-ingredients-list-li:not(:last-child) {
+   padding-bottom: 11px;
+}
+
+.modal-about-ingredients-list-li:last-child {
+   margin-bottom: 40px;
+}
+
+.modal-about-ingredients-list-li-right {
+   text-align: right;
+}
+
+.modal-about-table {
+   width: 100%;
+   margin: 0;
+}
+
+.modal-about-form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 29px;
+  
+}
+
+.modal-about-form-field {
+   margin-bottom: 12px;
+}
+
+.modal-about-form-input-wrapper {
+   display: block;
+   position: relative;
+
+}
+
+.modal-about-form-input {
+   width: 100%;
+   height: 42px;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+   padding-left: 12px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 140%;
+   color: #131313; 
+
+}
+
+.modal-about-form-field-comment {
+   margin-bottom: 24px;
+   
+}
+
+.modal-about-form-comment {
+   display: block;
+   width: 100%;
+   height: 84px;
+   resize: none;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+
+   padding-left: 12px;
+   padding-top: 8px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 140%;
+   color: var(--text-color-dark);
+   
+}
+
+.modal-about-form-send {
+   align-self: center;
+   width: 114px;
+   
+   padding: 12px 34px;
+   background: var(--Default-color);
+   border-radius: 10px;
+   border-color: transparent;
+
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0.04em;
+   color: var(--text-color-dark);
+   cursor: pointer;
+
+   transition: background-color var(--cubic-brauser),
+               color var(--cubic-brauser)
+}
+
+.modal-about-form-send:hover {
+   background-color: var(--hover-color);
+   color: var(--text-color-btn);
+}
+
+.modal-about-form-send:focus {
+   background-color: var(--hover-color);
+   color: #ffffff;
+}
+
+
+
+/* =================================== TABLET AND DESKTOP ================================ */
+
+@media screen and (min-width:768px) {
+
+   .modal-about {
+       width: 568px;
+       padding: 32px 40px;
+   }
+
+   .modal-about-header {
+       margin-bottom: 24px;
+   
+   }
+
+   .modal-about-list-products-img{
+       top: 84px;
+       left: 218px;
+       
+}
+
+   .modal-about-list::before {
+       top: 91px;
+       left: 218px;
+   }
+
+   .modal-about-list {
+       padding-top: 163px;
+       padding-bottom: 48px;
+       column-gap: 20px;
+   }
+
+   .modal-about-list-li-value {
+       width: 53px;
+       height: 53px;
+       font-size: 12px;
+       
+   }
+
+   .modal-about-list-li-measure {
+       width: 65px;
+       padding-top: 60px;
+       padding-bottom: 15px;
+       font-size: 12px;
+       line-height: 15px;
+       
+   }
+
+   .modal-about-table {
+       width: 488px;
+   }
+
+   .modal-about-form {
+       margin-top: 37px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .modal-about-form-input {
+       width: 368px;
+       padding-left: 16px;
+       font-size: 14px;
+      
+}
+
+.modal-about-form-field {
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 16px;
+}
+
+.modal-about-form-comment {
+   width: 368px;
+   margin-right: auto;
+   margin-left: auto;
+   
+}
+
+.modal-about-form-field-comment {
+   margin-bottom: 32px;
+}
+.modal-about-form-send {
+   width: 121px;
+   font-size: 14px;
+   line-height: 17px;
+   
+}
+}
+
+/* ============================================================================================ */
+
+/* ================================================== Product card - modal window =================================  */
+
+.modal-franchise {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 280px;
+   background: var(--text-color);
+   border: 2px solid var(--Default-color);
+   border-radius: 10px;
+   padding: 28px;
+
+   opacity: 0;
+   visibility: hidden;
+   z-index: 30;
+
+   
+}
+.modal-franchise-header {
+   margin-bottom: 20px;
+   font-family: 'Seymour One';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   color: var(--text-color-dark);
+
+}
+
+.modal-franchise-text {
+   width: 222px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.4;
+   color: var(--text-color-dark);
+   margin-bottom: 24px;
+
+}
+
+.modal-franchise-form {
+   display: flex;
+   flex-direction: column;
+   margin-top: 31px;
+  
+}
+
+.modal-franchise-form-field {
+   margin-bottom: 12px;
+}
+
+.modal-franchise-form-input-wrapper {
+   display: block;
+   position: relative;
+
+}
+
+.modal-franchise-form-input {
+   width: 100%;
+   height: 32px;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+   padding-left: 12px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.4;
+   color: var(--text-color-dark); 
+
+}
+
+.modal-franchise-form-field-comment {
+   margin-bottom: 24px;
+}
+
+.modal-franchise-form-comment {
+   display: block;
+   width: 100%;
+   height: 64px;
+   resize: none;
+   background: rgba(248, 210, 78, 0.1);
+   border: 1px solid #84A178;
+   border-radius: 10px;
+
+   padding-left: 12px;
+   padding-top: 8px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.4;
+   color: var(--text-color-dark);
+   
+}
+
+.modal-franchise-form-send {
+   align-self: center;
+   width: 114px;
+   
+   padding: 16px 32px;
+   background: var(--Default-color);
+   border-radius: 10px;
+   border-color: transparent;
+
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   letter-spacing: 0.04em;
+   color: var(--text-color-dark);
+   cursor: pointer;
+
+   transition: background-color var(--cubic-brauser),
+               color var(--cubic-brauser)
+}
+
+.modal-franchise-form-send:hover {
+   background-color: var(--hover-color);
+   color: var(--text-color-btn);
+}
+
+.modal-franchise-form-send:focus {
+   background-color: var(--hover-color);
+   color: #ffffff;
+}
+
+/* =================================== TABLET AND DESKTOP ================================ */
+
+@media screen and (min-width:768px) {
+   .modal-franchise {
+       width: 568px;
+       padding: 32px 60px;
+   }
+   .modal-franchise-header {
+       width: 322px;
+       font-size: 20px;
+       line-height: 28px;
+       margin-bottom: 24px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .modal-franchise-text {
+       width: 448px;
+       font-size: 16px;
+   }
+
+   .modal-franchise-form {
+       width: 368px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .modal-franchise-form-input {
+       height: 42px;
+   }
+
+   .modal-franchise-form-comment {
+       height: 84px;
+   }
+
+   .modal-franchise-form-send {
+       width: 121px;
+   }
+
+   .modal-franchise-form-field-comment {
+       margin-bottom: 32px;
+   }
+
+   .modal-franchise-form-field {
+       margin-bottom: 16px;
+   }
+}
+
+
+/* ===================================================== MAP AND VIDEO ================================================= */
+
+
+.modal-map{
+   width: 280px;
+   border-radius: 10px;
+   border: 2px solid #F8D24E;
+   background: #FCFCFC;
+   padding: 28px;
+   position: relative;
+ 
+   margin-left: auto;
+   margin-right: auto;
+ 
+ 
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+ 
+   transition: 0.3s all;
+ 
+   opacity: 0;
+   visibility: hidden;
+ }
+ 
+ @media screen and (min-width: 748px) {
+   
+   .modal-map{
+ width: 568px;
+   }
+ }
+ 
+ .map-title{
+   font-family: 'Seymour One';
+ 
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.5;
+ text-align: center;
+ color: #131313;
+ margin-bottom: 20px;
+ }
+ .img-map{
+   margin-bottom: 24px;
+ }
+ 
+ .btn-map{
+ width: 134px;
+ height: 42px;
+ background: #F8D24E;
+ border-radius: 10px;
+ border: none;
+ outline: none;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ 
+ .btn-map-close{
+   border: none;
+   background: transparent;
+  position: absolute;
+  left: 248px;
+  top: 12px;
+  margin: 0;
+  padding: 0;
+ }
+ 
+ @media screen  and (min-width: 748px) {
+   .btn-map-close{
+     left: 530px;
+   }
+   
  }
  
  
- /* Стили для модальных окон */
- 
- .modal {
-    
-    /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
-    
-    
-    /*  Установаем ширину окна  */
-    width: 100%;
-    max-width: 500px;
-    
-    /*  Центрируем и задаем z-index */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30; /* Должен быть выше чем у подложки*/
-    
-    /*  Побочные стили   */
-    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-    text-align: center;
-    padding: 30px;
-    border-radius: 3px;
-    background-color: #fff;
-    transition: 0.3s all;
- }
- 
- 
- /* Стили для активных классов подложки и окна */
- 
- .modal.active,
- .overlay.active{
-    opacity: 1;
-    visibility: visible;
- }
- 
- 
- /* Стили для кнопки закрытия */
  
  .modal__cross {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: #444;
-    cursor: pointer;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
  }
  
  
- /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+ /* відео */
  
-.buttonTest {
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #414b52;
-    margin: 10px;
-    color: #fff;
-    border-radius: 3px;
+
+ 
+ .Video-modal {
+   z-index: 40;
+   width: 280px;
+   background-color: #fcfcfc;
+   border: 2px solid #f8d24e;
+   border-radius: 10px;
+   margin: auto;
+   padding: 28px;
+   font-weight: 400;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ 
+   opacity: 0;
+   visibility: hidden;
  }
+ 
+ @media screen and (min-width:748px) {
+   .Video-modal{
+     width: 568px;
+   }
+  
+     }
+ 
+ .video-modal-button {
+   height: 16px;
+   width: 16px;
+   background-color: #fcfcfc;
+   border: 0;
+   outline: #0000;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+   transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+   display: flex;
+   position: absolute;
+   top: 8px;
+   right: 8px;
+ }
+ 
+ .modal-video-boxtitle {
+   text-align: center;
+   color: #131313;
+   margin-bottom: 20px;
+   font-family: seymour one, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
+ .modal-video-box {
+   width: 100%;
+   border-radius: 10px;
+   padding-bottom: 20px;
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .video-modal-text{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.4;
+   color: #131313;
+ }
+
+
+
