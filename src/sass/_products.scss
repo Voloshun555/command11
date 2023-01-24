@@ -1,9 +1,5 @@
 @media screen and (max-width: 479px) {
   .products-background {
-    position: absolute;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
@@ -211,10 +207,6 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .products-background {
-    position: absolute;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
@@ -416,10 +408,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products-background {
-    position: absolute;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
@@ -627,14 +615,11 @@
 
 @media screen and (min-width: 1200px) {
   .products-background {
-    position: absolute;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
   }
 
   .label {
