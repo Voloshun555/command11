@@ -1,0 +1,807 @@
+@media screen and (max-width: 479px) {
+  .products-background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .label {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    margin-bottom: 145px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    text-align: center;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    margin-bottom: 168px;
+    padding-top: 123px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 280px;
+    height: 420px;
+  }
+
+  .product-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-mobile.jpg);
+    background-position: 0px 0px;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    z-index: 5;
+  }
+
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-mobile.jpg);
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    z-index: 5;
+  }
+
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-mobile.jpg);
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -210px;
+    left: 0px;
+    z-index: 3;
+  }
+
+  .green {
+    background-color: var(--cards-cream);
+    position: relative;
+  }
+
+  .yellow {
+    background-color: var(--cards-coffe);
+  }
+
+  .pink {
+    background-color: var(--text-list-product);
+  }
+
+  .product-name {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-color-dark);
+  }
+
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .forward-button {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-mobile@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-mobile@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .products-background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .label {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    margin-bottom: 145px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    text-align: center;
+    padding-top: 126px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    margin-bottom: 168px;
+    height: 428px;
+    width: 320px;
+  }
+
+  .product-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    z-index: 5;
+  }
+
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    z-index: 5;
+  }
+
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-mobile.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -89px;
+    left: 60px;
+    z-index: 3;
+  }
+
+  .green {
+    background-color: var(--cards-cream);
+  }
+
+  .yellow {
+    background-color: var(--cards-coffe);
+  }
+
+  .pink {
+    background-color: var(--text-list-product);
+  }
+
+  .product-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-color-dark);
+  }
+
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .forward-button {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+ 
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-tablet@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-tablet@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .label {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.26;
+    text-align: center;
+    margin-bottom: 200px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .our-products {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 12px;
+    height: 428px;
+    width: 224px;
+  }
+
+  .product-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-tablet.jpg);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -111px;
+    left: 12px;
+    z-index: 5;
+  }
+
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-tablet.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -111px;
+    left: 12px;
+    z-index: 5;
+  }
+
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-tablet.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -111px;
+    left: 12px;
+    z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    z-index: 3;
+  }
+
+  .green {
+    background-color: var(--cards-cream);
+  }
+
+  .yellow {
+    background-color: var(--cards-coffe);
+  }
+
+  .pink {
+    background-color: var(--text-list-product);
+  }
+
+  .product-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-color-dark);
+  }
+
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .forward-button {
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  
+  .product-card.green::before {
+    background-image: url(../images/kelsey-curtis-ace-cream-disktop@2x.jpg);
+  }
+  .product-card.yellow::before {
+    background-image: url(../images/ace-coffee-disktop@2x.jpg);
+  }
+  .product-card.pink::before {
+    background-image: url(../images/milkshakes-disktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .label {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    margin-bottom: 303px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .our-products {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 29px;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    height: 536px;
+    width: 370px;
+  }
+
+  .product-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .product-card.green::before {
+    content: '';
+    background-image: url(../images/kelsey-curtis-ace-cream-disktop.jpg);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    top: -167px;
+    left: 34px;
+    z-index: 5;
+  }
+
+  .product-name-green::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
+  }
+
+  .product-card.yellow::before {
+    content: '';
+    background-image: url(../images/ace-coffee-disktop.jpg);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    top: -167px;
+    left: 34px;
+    z-index: 5;
+  }
+
+  .product-name-yellow::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
+  }
+
+  .product-card.pink::before {
+    content: '';
+    background-image: url(../images/milkshakes-disktop.jpg);
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    position: absolute;
+    top: -167px;
+    left: 34px;
+    z-index: 5;
+  }
+
+  .product-name-pink::before {
+    content: '';
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    background-position: 0px 0px;
+    width: 302px;
+    height: 318px;
+    border-radius: 50%;
+    position: absolute;
+    top: -166px;
+    left: 34px;
+    z-index: 3;
+  }
+
+  .green {
+    background-color: var(--cards-cream);
+  }
+
+  .yellow {
+    background-color: var(--cards-coffe);
+  }
+
+  .pink {
+    background-color: var(--text-list-product);
+  }
+
+  .product-name {
+    padding-top: 165px;
+    margin-bottom: 66px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-dark);
+  }
+
+  .product-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    padding-right: 64px;
+    padding-left: 64px;
+    letter-spacing: 0.04em;
+    color: var(--text-color-dark);
+  }
+
+  .forward {
+    margin-top: auto;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .forward-button {
+    fill: currentColor;
+  }
+}
