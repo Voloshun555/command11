@@ -15,6 +15,7 @@
   // background-position: bottom;
 }
 
+
 .header-button:hover,
 .header-button:focus{
 background-color: var( --hover-color);
@@ -24,8 +25,9 @@ background-color: var( --hover-color);
   background-color: var(--text-color-data--Disabled);
 }
 
+.hero-button,
+.header-botton {
 
-.hero-button {
   font-weight: 600;
   font-size: 12px;
   box-sizing: border-box;
