@@ -9,7 +9,12 @@
     </div>
     <div class="hero-text">
       <img
-        srcset="./images/много-мороженок-disktop.jpg 1x"
+        srcset="
+          ./images/много-мороженок-disktop.jpg    1x,
+          ./images/много-мороженок-disktop@2x.jpg,
+          ./images/много-мороженок-tablet.jpg,
+          .//images/много-мороженок-tablet@2x.jpg
+        "
         class="plate"
         src="./images/много-мороженок-disktop.jpg"
         alt="plate of ice cream"
@@ -28,9 +33,25 @@
     </div>
 
     <div class="ice-cream">
-      <img class="dots" src="./images/ice-cream-frame-mobile.png" alt="" />
+      <img
+        class="dots"
+        srcset="
+          ./images/ice-cream-frame-mobile@2x.png,
+          ./images/ice-cream-frame-desktop.png,
+          ./images/ice-cream-frame-desktop@2x.png,
+          ./images/ice-cream-frame-tablet.png,
+          ./images/ice-cream-frame-tablet@2x.png
+        "
+        src="./images/ice-cream-frame-mobile.png"
+        alt=""
+      />
       <img
         class="hero-image"
+        srcset="
+          ./images/ace-cream-desktop@2x.png,
+          ./images/ace-cream-mobile.png,
+          ./images/ace-cream-mobile@2x.png
+        "
         width="177px"
         height="217px"
         src="./images/ace-cream-desktop.png"
