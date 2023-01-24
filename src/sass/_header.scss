@@ -180,10 +180,10 @@
   text-align: center;
 }
 
-.logo-link {
-  width: 40px;
-  height: 37px;
-}
+// .logo-link {
+//   width: 40px;
+//   height: 37px;
+// }
 
 .hero-menu {
   font-weight: 700;
@@ -192,7 +192,6 @@
   align-items: center;
   list-style: none;
   margin-left: 308px;
-  padding-top: 40px;
   padding-left: 0;
   margin-top: 0;
 }
@@ -238,7 +237,6 @@
   width: 152px;
   height: 42px;
   border-radius: 10px;
-  margin-top: 28px;
 }
 
 @media screen and (min-width: 480px) {
@@ -258,6 +256,11 @@
   .menu-button {
     display: none;
   }
+
+  .container-header {
+    display: flex;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1156px) {
   .hero-menu {
@@ -266,7 +269,6 @@
 
   .header-button {
     margin-left: 38px;
-    margin-top: 24px;
   }
 }
 

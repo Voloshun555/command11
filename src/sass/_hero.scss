@@ -62,7 +62,6 @@
 
 .passion-buttons {
   margin-top: 32px;
-  margin-bottom: 150px;
 }
 
 .hero-text {
@@ -107,14 +106,14 @@
 .dots {
   position: absolute;
   bottom: 0;
-  left: 140px;
-  width: 330px;
+  right: 0;
 }
 
 .hero-image {
   position: absolute;
   bottom: 0;
-  left: 227px;
+  right: 0;
+  margin-right: 60px;
 }
 
 .container-hero {
@@ -143,6 +142,37 @@
   font-weight: 400;
   font-size: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  .passion-buttons {
+    margin-bottom: 236px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .passion-buttons {
+    margin-bottom: 12px;
+  }
+
+  .hero-text {
+    margin-bottom: 12px;
+  }
+
+  .hero-image {
+    margin-right: 92px;
+  }
+
+  .description {
+    margin-left: 32px;
+  }
+
+  .description-text {
+    width: 139px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero-text {
     display: none;
@@ -176,6 +206,7 @@
   .passion-buttons {
     margin: unset;
     margin-top: 24px;
+    margin-bottom: 42px;
   }
 
   .hero-link {
@@ -183,6 +214,13 @@
     margin-left: 34px;
   }
 
+  .hero-text {
+    margin-bottom: 65px;
+  }
+
+  .hero-image {
+    margin-right: 112px;
+  }
   .amount {
     font-weight: 900;
     font-size: 46px;
