@@ -3,6 +3,7 @@ ul,ol {
 }
 .contacs {
     padding: 60px 0;
+    background-image: linear-gradient(#0000 192px, #84a178 175px);
 }
 .container-contacs {
     width: 480px;
@@ -180,9 +181,15 @@ ul,ol {
     .container-contacs {
         width: 100%;
     }
+    .contacs {
+        background-image: linear-gradient(#0000 415px, #84a178 175px);
+    }
 }
 //---Tablet---//
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .contacs {
+        background-image: linear-gradient(#0000 320px, #84a178 175px);
+    }
     .global-section-contacs {
         width: 768px;
         display: flex;
