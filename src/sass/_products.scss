@@ -8,7 +8,6 @@
     padding-bottom: 60px;
     width: 100%;
     max-width: 1440px;
-    background-image: url(../images/Backgroud_mobile.jpg);
   }
 
   .label {
@@ -198,9 +197,7 @@
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .products-background {
-    background-image: url(../images/Backgroud_mobile@2x.jpg);
-  }
+  
   .product-card.green::before {
     background-image: url(../images/kelsey-curtis-ace-cream-mobile@2x.jpg);
   }
@@ -222,7 +219,6 @@
     padding-bottom: 60px;
     width: 100%;
     max-width: 1440px;
-    background-image: url(../images/Backgroud_mobile.jpg);
   }
 
   .label {
@@ -406,9 +402,7 @@
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .products-background {
-    background-image: url(../images/Background_tablet@2x.jpg);
-  }
+ 
   .product-card.green::before {
     background-image: url(../images/kelsey-curtis-ace-cream-tablet@2x.jpg);
   }
@@ -430,7 +424,6 @@
     padding-bottom: 60px;
     width: 100%;
     max-width: 1440px;
-    background-image: url(../images/Background_tablet.jpg);
   }
 
   .label {
@@ -620,9 +613,7 @@
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .products-background {
-    background-image: url(../images/Backgroud_desktop@2x.jpg);
-  }
+  
   .product-card.green::before {
     background-image: url(../images/kelsey-curtis-ace-cream-disktop@2x.jpg);
   }
@@ -644,7 +635,6 @@
     padding-bottom: 60px;
     width: 100%;
     max-width: 1440px;
-    background-image: url(../images/Backgroud_desktop.jpg);
   }
 
   .label {
@@ -799,6 +789,7 @@
 
   .product-name {
     padding-top: 165px;
+    margin-bottom: 66px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
