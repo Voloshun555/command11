@@ -15,7 +15,19 @@
   // background-position: bottom;
 }
 
-.hero-button {
+
+.header-button:hover,
+.header-button:focus{
+background-color: var( --hover-color);
+}
+
+.header-button:disabled{
+  background-color: var(--text-color-data--Disabled);
+}
+
+.hero-button,
+.header-botton {
+
   font-weight: 600;
   font-size: 12px;
   box-sizing: border-box;
@@ -107,6 +119,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  pointer-events: none;
 }
 
 .hero-image {

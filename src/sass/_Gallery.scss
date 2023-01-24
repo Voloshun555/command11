@@ -71,49 +71,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .container-swiper-slider {
-      
-        background-image: url(../images/Backgroud_mobile.jpg);
-    }
 
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px ),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .container-swiper-slider {
-        background-image: url(../images/Backgroud_mobile@2x.jpg);
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .container-swiper-slider {
-      
-        background-image: url(../images/Background_tablet.jpg);
-    }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .container-swiper-slider {
-        background-image: url(../images/Background_tablet@2x.jpg);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container-swiper-slider {
-        
-        background-image: url(../images/Backgroud_desktop.jpg);
-    }
-
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .container-swiper-slider {
-        background-image: url(../images/Backgroud_desktop@2x.jpg);
-    }
-}
 .swiper {
     
     max-width: 1013px;
