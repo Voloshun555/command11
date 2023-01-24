@@ -1,0 +1,329 @@
+:root {
+  --logo-color: #131313;
+  --logo-fon-color: #f8d24e;
+  --fon-color: #84a178;
+  --text-color: #fcfcfc;
+}
+@media screen and (max-width: 479px) {
+  .container-advantages {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+.section-advant{
+  background-color: #84a178;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .container-advantages {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-advantages {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-advantages {
+    width: 1200px;
+  }
+}
+
+/* Other 320 */
+@media screen and (max-width: 479px) {
+  .container-advantages {
+    background-color: var(--fon-color);
+    padding-top: 50px;
+  }
+
+  .advantage-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-advantage {
+    background-color: var(--logo-fon-color);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-advantage-svg {
+    color: var(--logo-color);
+  }
+
+  .advantage-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    text-transform: lowercase;
+  }
+
+  .advantage-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--text-color);
+    width: 230px;
+    height: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Mobile 480 */
+
+@media screen and (min-width: 480px) {
+  .container-advantages {
+    background-color: var(--fon-color);
+    padding-top: 60px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .advantage-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-advantage {
+    background-color: var(--logo-fon-color);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-advantage-svg {
+    color: var(--logo-color);
+  }
+
+  .advantage-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    text-transform: lowercase;
+  }
+
+  .advantage-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--text-color);
+    width: 230px;
+    height: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .container-advantages {
+    background-color: var(--fon-color);
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .advantage-list {
+    display: flex;
+    gap: 80px;
+    margin-left: 76px;
+    margin-right: 76px;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-advantage {
+    background-color: var(--logo-fon-color);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-advantage-svg {
+    color: var(--logo-color);
+  }
+
+  .advantage-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    text-transform: lowercase;
+  }
+
+  .advantage-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+    text-align: center;
+    color: var(--text-color);
+    width: 152px;
+    height: 88px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .container-advantages {
+    background-color: var(--fon-color);
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .advantage-list {
+    display: flex;
+    gap: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-advantage {
+    background-color: var(--logo-fon-color);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-advantage-svg {
+    color: var(--logo-color);
+  }
+
+  .advantage-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    text-transform: lowercase;
+  }
+
+  .advantage-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    width: 368px;
+    height: 52px;
+  }
+}
