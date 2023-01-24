@@ -149,10 +149,14 @@
 
 .container-header {
   background-color: #84a278;
-  width: 100%;
   padding: 12px 20px;
+  display: flex;
+  text-align: center;
 }
 
+.header {
+  background-color: #84a278;
+}
 .menu-toggle {
   background-color: transparent;
   margin-left: auto;
@@ -174,16 +178,6 @@
   border-radius: 10px;
   margin-top: 110px;
 }
-
-.hero-header {
-  display: flex;
-  text-align: center;
-}
-
-// .logo-link {
-//   width: 40px;
-//   height: 37px;
-// }
 
 .hero-menu {
   font-weight: 700;
@@ -250,6 +244,10 @@
   .header-button {
     display: none;
   }
+
+  .container-header {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -280,5 +278,9 @@
   .hero-logo {
     width: 60px;
     height: 65px;
+  }
+
+  .container-header {
+    max-width: 1200px;
   }
 }

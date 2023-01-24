@@ -147,6 +147,10 @@
   .passion-buttons {
     margin-bottom: 236px;
   }
+
+  .container-hero {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -171,6 +175,10 @@
     font-size: 12px;
     line-height: 1.4;
   }
+
+  .container-hero {
+    max-width: 768px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -184,6 +192,10 @@
 }
 
 @media screen and (min-width: 1157px) {
+  .container-hero {
+    max-width: 1200px;
+  }
+
   .text-h {
     width: 367px;
     font-size: 38px;
