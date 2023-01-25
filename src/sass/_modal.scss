@@ -61,7 +61,7 @@
    padding: 28px;
    opacity: 0;
  visibility: hidden;
- z-index: 30;
+ z-index: 999;
 
  @media screen and (max-width:1199px) {
    height: 90vh;
@@ -684,7 +684,7 @@ display: block;
 
 .modal-franchise {
    position: fixed;
-   top: 60%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    width: 280px;

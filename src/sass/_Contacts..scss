@@ -14,7 +14,7 @@ ul,ol {
 .some-contacs-cards {
     width: 280px;
     height: 100%;
-    padding: 40px 32px 24px 32px;
+    padding: 44px 32px 32px ;
     margin: 0 auto;
     margin-bottom: 16px;
     text-decoration: none;
@@ -23,7 +23,18 @@ ul,ol {
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     list-style-type: none;
+
+
+    @media screen  and (min-width:768px) {
+
+        padding: 44px 24px 24px;
+
+    }
 }
+
+
+
+
 .some-contacs-cards-last {
     margin-bottom: 0;
 }
@@ -46,14 +57,26 @@ ul,ol {
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
 }
-.contacs-tables {
+.contacs-table {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
-    color: #131313;
+    
+
+    @media screen and (min-width:768px) {
+        font-weight: 500;
+font-size: 14px;
+line-height: 183%;
+/* or 26px */
+
+letter-spacing: 0.04em;
+
+
+        
+    }
 }
 
 .contacs-table:hover{
@@ -97,6 +120,13 @@ text-decoration: underline;
     font-size: 12px;
     line-height: 1.86;
     color: #131313;
+
+    margin-bottom: 8px;
+
+    @media screen  and (min-width:1200px) {
+        margin-bottom: 12px;
+        
+    }
 }
 .contacs-card-team {
     font-family: 'Montserrat';
@@ -183,6 +213,12 @@ text-decoration: underline;
     margin-right: 4px;
 }
 //---Phone---//
+
+.contacs-tables {
+   
+    margin-bottom: 8px;}
+
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container-contacs {
         width: 100%;
@@ -202,7 +238,7 @@ text-decoration: underline;
         margin: 0 auto;
         justify-content: center;
     }
-    .global-section-contacs li {
+    .global-section-contacs>li {
         margin-right: 16px;
     }
     .global-section-contacs li:last-child {
@@ -232,6 +268,7 @@ text-decoration: underline;
     }
     .contacs-tables {
         width: 150px;
+        margin-bottom: 12px;
     }
     // .container-button {
     //     display: flex;
