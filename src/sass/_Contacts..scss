@@ -54,6 +54,7 @@ ul,ol {
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: #131313;
+    margin-bottom: 8px;
 }
 
 .contacs-table:hover{
@@ -84,6 +85,7 @@ text-decoration: underline;
 }
 .contacs-table {
     color: #D6936D;
+    
 }
 .contacs-card-teams {
     padding: 24px 0;
@@ -213,7 +215,7 @@ text-decoration: underline;
     } 
     .some-contacs-cards {
         width: 224px;
-        height: 537px;
+        height: 100%;
         margin: 0 auto;
         margin: 0;
     }
@@ -232,6 +234,11 @@ text-decoration: underline;
     }
     .contacs-tables {
         width: 150px;
+        
+        
+    }
+    .contacs-cards-table-right {
+        padding-bottom: 41px;
     }
     // .container-button {
     //     display: flex;
@@ -295,6 +302,6 @@ text-decoration: underline;
         margin-top: 60px;
     }
     .contacs-cards-table-right {
-        padding-bottom: 53px;
+        // padding-bottom: 53px;
     }
 }
